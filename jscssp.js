@@ -45,7 +45,7 @@
  * ***** END LICENSE BLOCK ***** */
 /***
 	FG Ribreau - FGRibreau.com
-	-> DOM Pollution suppressed 
+	-> DOM Pollution removed 
 */
 
 (function(){
