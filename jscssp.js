@@ -1,10 +1,3 @@
-/***
-	
-	var parser = new CSSParser();
-	parser.parse("a{color:#FF0OFF;}", false, true);
-
-*/
-
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
@@ -50,6 +43,13 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
+/***
+	FG Ribreau - FGRibreau.com
+	-> DOM Pollution suppressed 
+*/
+
+(function(){
+	
 
 var CSS_ESCAPE  = '\\';
 
@@ -439,7 +439,7 @@ CSSScanner.prototype = {
   }
 };
 
-function CSSParser(aString)
+this.CSSParser = function(aString)
 {
   this.mToken = null;
   this.mLookAhead = null;
@@ -3807,3 +3807,5 @@ function countChar(s){
 	var nChar = nChar+nCRLF;
 	return nChar;
 }
+
+}())
